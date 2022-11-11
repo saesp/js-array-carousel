@@ -4,19 +4,23 @@
 
 // creare click avanti e indietro per cambiare le immagini
 
-// rendere invisibile le img precedenti e successive a quella selezionata
+// rendere invisibili le img precedenti e successive a quella selezionata
 
 const contImg = document.getElementsByClassName("cont-img");
 
+const butUp = document.querySelector(".but-up");
+
+for (let i = 0; i < contImg.length; i++) {
+    butUp.addEventListener("click", function (){
+
+        // se img < numTot img allora vai avanti
+        if (contImg[i] < contImg.length){
+            contImg[i].classList.remove("img-vis");
+            i++;
+            contImg[i].classList.add("img-vis");
+        }
+    })
+}
 
 
-const butUp = document.querySelector(".bu-up");
-
-butUp.addEventListener("click", function ()
-    
-    if ( contImg.length){
-        
-    } else if
-  
-)
 
