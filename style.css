@@ -1,0 +1,9 @@
+.container-carousel img{
+    padding: 100px;
+}
+
+.container-carousel img{
+    margin: auto;
+    display: block;
+    width: 300px;
+}
