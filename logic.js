@@ -6,5 +6,17 @@
 
 // rendere invisibile le img precedenti e successive a quella selezionata
 
+const contImg = document.getElementsByClassName("cont-img");
 
+
+
+const butUp = document.querySelector(".bu-up");
+
+butUp.addEventListener("click", function ()
+    
+    if ( contImg.length){
+        
+    } else if
+  
+)
 
