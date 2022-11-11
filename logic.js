@@ -1,11 +1,10 @@
-// Creare un blocco di immagini dinamico
+// Creare un blocco di immagini da 1 a 5
+
+// crare tag img nel contenitore 
+
+// creare click avanti e indietro per cambiare le immagini
+
+// rendere invisibile le img precedenti e successive a quella selezionata
 
 
-// creare array contenente le img
-const img1 = ;
-const img2 = ;
-const img3 = ;
-const img4 = ;
-const img5 = ;
 
-const imgList = [img1, img2, img3, img4, img5];

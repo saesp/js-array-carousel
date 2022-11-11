@@ -1,9 +1,27 @@
-.container-carousel img{
+.container{
     padding: 100px;
+}
+
+.container-carousel{ 
+    position: relative;
 }
 
 .container-carousel img{
     margin: auto;
     display: block;
     width: 300px;
+}
+
+.container-carousel .but-up{
+    position: absolute;
+    top: 20px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.container-carousel .but-down{
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    left: 50%;
 }
