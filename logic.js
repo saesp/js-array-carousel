@@ -1,39 +1,54 @@
 // Creare un blocco di immagini da 1 a 5
 
-// crare tag img nel contenitore 
 
-// creare click avanti e indietro per cambiare le immagini
+let imgList = new Array();
 
-// rendere invisibili le img precedenti e successive a quella selezionata
+imgList[0] = new Image();
+imgList[0].src = 'img/01.webp';
+
+imgList[1] = new Image();
+imgList[1].src = 'img/02.webp';
+
+imgList[2] = new Image();
+imgList[2].src = 'img/03.webp';
+
+imgList[3] = new Image();
+imgList[3].src = 'img/04.webp';
+
+imgList[4] = new Image();
+imgList[4].src = 'img/05.webp';
 
 
-const img1 = `<div class="cont-img><img class="cont-img src="img/01.webp"></div>`;
-const img2 = `<div class="cont-img><img class="cont-img src="img/02.webp"></div>`;
-const img3 = `<div class="cont-img><img class="cont-img src="img/03.webp"></div>`;
-const img4 = `<div class="cont-img><img class="cont-img src="img/04.webp"></div>`;
-const img5 = `<div class="cont-img><img class="cont-img src="img/05.webp"></div>`;
+for (let i = 0; i < imgList.length; i++) {
+    const contCar = document.querySelector("div.container-carousel");
+    const div = document.createElement("div");
 
-const contCar = document.getElementsByClassName("container-carousel");
+    div.append(imgList[i]);
+    contCar.append(div);
+    
+    div.classList.add("cont-img");
 
-const contImg = document.getElementsByClassName("cont-img");
+    console.log(imgList[i]);
+}
 
-contCar.innerHTML += img1 + img2 + img3 + img4 + img5;
-
-const imgList = [img1, img2, img3, img4, img5];
 
 const butUp = document.querySelector(".but-up");
 
-for (let i = 0; i < imgList.length; i++) {
-    butUp.addEventListener("click", function (){
+const contImg = document.getElementsByClassName("cont-img");
+contImg[0].classList.add("active");
+let activeItem = 0;
 
-        // se img < numTot img allora vai avanti
-        if (imgList[i] < imgList.length){
-            contImg[i].classList.remove("img-vis");
-            i++;
-            contImg[i].classList.add("img-vis");
-        }
-    })
-}
+// creo azione click button
+butUp.addEventListener("click", function (){
+    
+    // se img < numTot img allora vai avanti
+    if (contImg < contImg.length - 1){
+        contImg[activeItem].classList.remove("active");
+        activeItem++;
+        contImg[activeItem].classList.add("active");
+    } 
+})
+
 
 
 

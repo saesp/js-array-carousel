@@ -3,15 +3,18 @@
 }
 
 .container-carousel{ 
+    margin: auto;
     position: relative;
 }
 
 .container-carousel img{
-    margin: auto;
-    display: block;
-    width: 300px;
+    width: 600px;
+    height: 500px;
 }
 
+.container-carousel div{
+    margin: auto;
+}
 .container-carousel .but-up{
     position: absolute;
     top: 20px;
@@ -30,6 +33,6 @@
     display: none;
 }
 
-.cont-img.img-vis{
-    display: block;
+.cont-img.active{
+    display: inline-block;
 }
