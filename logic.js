@@ -3,7 +3,10 @@
 
 let imgList = ['img/01.webp', 'img/02.webp', 'img/03.webp', 'img/04.webp', 'img/05.webp'];
 
+// contenitore carousel
 const contCar = document.querySelector("div.cont-car");
+
+// contenuto contenitore carousel
 let carContent = " ";
 
 let active = 0;
@@ -20,17 +23,18 @@ contCar.innerHTML += carContent;
 document.getElementsByClassName('cont-img')[active].classList.add('active');
 
 
+//div contenitori img
+const contImg = document.querySelector("div.cont-img");
+
 const butUp = document.querySelector(".but-up");
 
 butUp.addEventListener("click", function (){
     
-    if (active < contImg.length - 1){
-        contCar[active].classList.remove("active");
-
+    if (active < imgList.length -1){
+        contImg.classList.remove("active")[active];
         active++;
-
-        contCar[active].classList.add("active");
-    } 
+        contImg.classList.add("active")[active];
+    }
 })
 
 
