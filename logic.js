@@ -24,14 +24,13 @@ const butUp = document.querySelector(".but-up");
 
 butUp.addEventListener("click", function (){
     
-    if (active == contImg.length - 1){
-        active = 0;
-    } else {
-        active++;
-    }
+    if (active < contImg.length - 1){
+        contCar[active].classList.remove("active");
 
-    document.querySelector('.cont-img.active').classList.remove("active");
-    document.getElementsByClassName('cont-img')[active].classList.add("active");
+        active++;
+
+        contCar[active].classList.add("active");
+    } 
 })
 
 
