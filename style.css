@@ -2,7 +2,7 @@
     padding: 50px;
 }
 
-.cont-car{ 
+.cont-car{
     text-align: center;
     position: relative;
 }
@@ -30,7 +30,7 @@
     display: inline-block;
 }
 
-button {
+button{
     position: absolute;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.518);
@@ -39,4 +39,8 @@ button {
     border: 0;
     border-radius: 10px;
     cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
 }
