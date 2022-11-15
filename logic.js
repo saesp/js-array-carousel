@@ -24,18 +24,30 @@ document.getElementsByClassName('cont-img')[active].classList.add('active');
 
 
 //div contenitori img
-const contImg = document.querySelector("div.cont-img");
+const contImg = document.getElementsByClassName('cont-img');
 
 const butUp = document.querySelector(".but-up");
 
 butUp.addEventListener("click", function(){
     
     if (active < imgList.length -1){
-        document.getElementsByClassName('cont-img')[active].classList.remove("active");
+        contImg[active].classList.remove("active");
         active++;
-        document.getElementsByClassName('cont-img')[active].classList.add("active");
+        contImg[active].classList.add("active");
     }
 })
+
+const butDown = document.querySelector(".but-down");
+
+butDown.addEventListener("click", function(){
+    
+    if (active < imgList.length -1){
+        contImg[active].classList.remove("active");
+        active--;
+        contImg[active].classList.add("active");
+    }
+})
+
 
 
 
