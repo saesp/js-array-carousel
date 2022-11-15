@@ -1,5 +1,5 @@
 .container{
-    padding: 100px;
+    padding: 50px;
 }
 
 .cont-car{ 
@@ -8,8 +8,8 @@
 }
 
 .cont-car img{
-    width: 1000px;
-    height: 600px;
+    width: 900px;
+    height: 550px;
 }
 
 .cont-car .but-up{
