@@ -2,30 +2,23 @@
     padding: 100px;
 }
 
-.container-car{ 
-    margin: auto;
+.cont-car{ 
+    text-align: center;
     position: relative;
 }
 
 .cont-car img{
-    width: 600px;
-    height: 500px;
+    width: 1000px;
+    height: 600px;
 }
 
-.cont-car div{
-    margin: auto;
-}
 .cont-car .but-up{
-    position: absolute;
-    top: 20px;
-    transform: translate(-50%, -50%);
+    top: 25px;
     left: 50%;
 }
 
 .cont-car .but-down{
-    position: absolute;
     bottom: 0;
-    transform: translate(-50%, -50%);
     left: 50%;
 }
 
@@ -35,4 +28,15 @@
 
 .cont-img.active{
     display: inline-block;
+}
+
+button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.518);
+    color: firebrick;
+    padding: 7px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
 }

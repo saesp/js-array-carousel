@@ -9,8 +9,6 @@ const contCar = document.querySelector("div.cont-car");
 // contenuto contenitore carousel
 let carContent = " ";
 
-let active = 0;
-
 for (let i = 0; i < imgList.length; i++) {
     
     carContent += `
@@ -20,6 +18,7 @@ for (let i = 0; i < imgList.length; i++) {
 }
 
 contCar.innerHTML += carContent;
+let active = 0;
 document.getElementsByClassName('cont-img')[active].classList.add('active');
 
 
@@ -41,7 +40,7 @@ const butDown = document.querySelector(".but-down");
 
 butDown.addEventListener("click", function(){
     
-    if (active < imgList.length -1){
+    if (active < imgList.length && active !== 0){
         contImg[active].classList.remove("active");
         active--;
         contImg[active].classList.add("active");
