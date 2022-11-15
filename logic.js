@@ -28,7 +28,7 @@ const contImg = document.querySelector("div.cont-img");
 
 const butUp = document.querySelector(".but-up");
 
-butUp.addEventListener("click", function (){
+butUp.addEventListener("click", function(){
     
     if (active < imgList.length -1){
         contImg.classList.remove("active")[active];
@@ -36,7 +36,6 @@ butUp.addEventListener("click", function (){
         contImg.classList.add("active")[active];
     }
 })
-
 
 
 
