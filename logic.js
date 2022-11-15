@@ -31,9 +31,9 @@ const butUp = document.querySelector(".but-up");
 butUp.addEventListener("click", function(){
     
     if (active < imgList.length -1){
-        contImg.classList.remove("active")[active];
+        document.getElementsByClassName('cont-img')[active].classList.remove("active");
         active++;
-        contImg.classList.add("active")[active];
+        document.getElementsByClassName('cont-img')[active].classList.add("active");
     }
 })
 
